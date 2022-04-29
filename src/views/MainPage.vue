@@ -1,11 +1,14 @@
 <template>
-  <RouterView />
+  <HeadScreen />
 </template>
 
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import HeadScreen from '@/components/HeadScreen.vue';
+//import { RouterLink, RouterView } from 'vue-router'
 export default{
-  
+  components:{
+    HeadScreen
+  }
 }
 </script>
 
