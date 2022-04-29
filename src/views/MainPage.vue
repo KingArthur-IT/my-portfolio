@@ -2,12 +2,16 @@
   <HeadScreen />
   <AboutMeSection />
   <OfferSection />
+  <WorkConsistent />
+  <ContactsSection />
 </template>
 
 <script setup>
 import HeadScreen from '@/components/HeadScreen.vue';
 import AboutMeSection from '@/components/AboutMeSection.vue';
 import OfferSection from '@/components/OfferSection.vue';
+import WorkConsistent from '@/components/WorkConsistent.vue';
+import ContactsSection from '@/components/ContactsSection.vue';
 import { onMounted } from '@vue/runtime-core';
 //import { RouterLink, RouterView } from 'vue-router'
 
