@@ -1,9 +1,11 @@
 <template>
   <HeadScreen />
+  <AboutMeSection />
 </template>
 
 <script setup>
 import HeadScreen from '@/components/HeadScreen.vue';
+import AboutMeSection from '@/components/AboutMeSection.vue';
 import { onMounted } from '@vue/runtime-core';
 //import { RouterLink, RouterView } from 'vue-router'
 
