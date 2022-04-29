@@ -2,14 +2,29 @@
   <HeadScreen />
 </template>
 
-<script>
+<script setup>
 import HeadScreen from '@/components/HeadScreen.vue';
+import { onMounted } from '@vue/runtime-core';
 //import { RouterLink, RouterView } from 'vue-router'
-export default{
-  components:{
-    HeadScreen
-  }
-}
+
+onMounted(() => {
+    //Scroll animation
+    const animatedElemets = document.querySelectorAll('.anim-item');
+    const animateObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('anim-active')
+        }
+      })
+    }, {
+      rootMargin: '-90px',
+    });
+
+    animatedElemets.forEach(entry => {
+      animateObserver.observe(entry);
+    });
+})
+
 </script>
 
 <style>
