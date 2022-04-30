@@ -1,6 +1,6 @@
 <template>
     <section class="section" id = "cases">
-        <h2 class="title">Последние проекты</h2>
+        <h2 class="title">{{ $t("message.lastCases") }}</h2>
         <div class="anim-item title-underline"></div>  
         <div v-for="project in projectsList.filter((item, i) => {return i < projectsList.length && i > projectsList.length - showCasesCount}).reverse()" 
              :key="project.id" class="case-item anim-item" :class="{'anim-active': project.id < showCasesCount}"

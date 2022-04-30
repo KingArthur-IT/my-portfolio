@@ -8,7 +8,7 @@ export const localesTexts = {
             offer: 'Offers',
             cases: 'Cases',
             contacts: 'Contacts',
-            generalInfo: '30 y.o., Mariupol, Ukraine',
+            generalInfo: 'y.o., Mariupol, Ukraine',
             educationInfo: 'Mathematician-programmer, PhD (technical sciences)',
             jobsInfo: 'Frontend developer, Senior Lecturer',
             profileInfo1: 'Freelancer profile',
@@ -39,7 +39,9 @@ export const localesTexts = {
             useFrameworksTitle: 'Custom Components',
             useFrameworksInfo: 'Create any unique custom components, use frameworks Vue.js (2,3), Nuxt.js',
             animationsTitle: 'Animations and interactive',
-            animationsInProduction: 'Animations, interesting and interactive elements, 3D models on the site increase interest in your product and the trust of potential customers in your business'
+            animationsInProduction: 'Animations, interesting and interactive elements, 3D models on the site increase interest in your product and the trust of potential customers in your business',
+
+            lastCases: 'Last cases'
         }
     },
     uk: {
@@ -51,7 +53,7 @@ export const localesTexts = {
             offer: 'Пропозиції',
             cases: 'Кейси',
             contacts: 'Контакти',
-            generalInfo: '30 років, м. Маріуполь, Україна',
+            generalInfo: 'років, м. Маріуполь, Україна',
             educationInfo: 'Математик-програміст, PhD (канд. техн. наук)',
             jobsInfo: 'Frontend developer, Викладач',
             profileInfo1: 'Профіль фрилансера',
@@ -82,7 +84,9 @@ export const localesTexts = {
             useFrameworksTitle: 'Кастомні компоненти',
             useFrameworksInfo: 'Створення будь-яких унікальних компонентів користувача, використання фреймворків Vue.js (2,3), Nuxt.js',
             animationsTitle: 'Анімації та інтерактив',
-            animationsInProduction: 'Анімації, цікаві ітерактивні елементи, 3D моделі на сайті підвищують інтерес до вашого продукту та довіру потенційних клієнтів до Вашого бізнесу'
+            animationsInProduction: 'Анімації, цікаві ітерактивні елементи, 3D моделі на сайті підвищують інтерес до вашого продукту та довіру потенційних клієнтів до Вашого бізнесу',
+
+            lastCases: 'Останні проекти'
         }
     },
     ru: {
@@ -94,7 +98,7 @@ export const localesTexts = {
             offer: 'Оффер',           
             cases: 'Кейсы',
             contacts: 'Контакты',
-            generalInfo: '30 лет, г. Мариуполь, Украина',
+            generalInfo: 'лет, г. Мариуполь, Украина',
             educationInfo: 'Математик-программист, PhD (канд. техн. наук)',
             jobsInfo: 'Frontend developer, Преподаватель',
             profileInfo1: 'Профиль фрилансера',
@@ -125,7 +129,9 @@ export const localesTexts = {
             useFrameworksTitle: 'Кастомные компоненты',
             useFrameworksInfo: 'Создание любых уникальных пользовательских компонент, использование фреймворков Vue.js (2,3), Nuxt.js',
             animationsTitle: 'Анимации и интерактив',
-            animationsInProduction: 'Анимации, интересные итерактивные элементы, 3D модели на сайте повышают интерес к вашему продукту и доверие потенциальных клиентов к Вашем бизнесу'
+            animationsInProduction: 'Анимации, интересные итерактивные элементы, 3D модели на сайте повышают интерес к вашему продукту и доверие потенциальных клиентов к Вашем бизнесу',
+
+            lastCases: 'Последние проекты'
 
     }
       },
