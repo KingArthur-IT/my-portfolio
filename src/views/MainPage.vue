@@ -3,6 +3,7 @@
   <HeadScreen />
   <AboutMeSection />
   <OfferSection />
+  <CasesSection />
   <WorkConsistent />
   <ContactsSection />
   <Footer />
@@ -13,6 +14,7 @@ import Navbar from '@/components/Navbar.vue';
 import HeadScreen from '@/components/HeadScreen.vue';
 import AboutMeSection from '@/components/AboutMeSection.vue';
 import OfferSection from '@/components/OfferSection.vue';
+import CasesSection from '@/components/CasesSection.vue';
 import WorkConsistent from '@/components/WorkConsistent.vue';
 import ContactsSection from '@/components/ContactsSection.vue';
 import Footer from '@/components/Footer.vue';
@@ -29,7 +31,7 @@ onMounted(() => {
         }
       })
     }, {
-      rootMargin: '-90px',
+      rootMargin: '-30px',
     });
 
     animatedElemets.forEach(entry => {
