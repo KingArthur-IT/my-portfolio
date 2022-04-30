@@ -4,10 +4,26 @@
             <Hamburger :isActive="navbarShown"/>
         </div>
         <nav class="menu" :class="{'clicked': navbarShown}">
-            <div class="menu__item"><a href="#about-me" class="menu-link">О себе</a></div>
-            <div class="menu__item"><a href="#offer" class="menu-link">Оффер</a></div>
-            <div class="menu__item"><a href="#cases" class="menu-link">Кейсы</a></div>
-            <div class="menu__item"><a href="#contacts" class="menu-link">Контакты</a></div>
+            <div class="menu__item">
+                <a href="#about-me" class="menu-link">
+                    {{ $t("message.aboutMe") }}
+                </a>
+            </div>
+            <div class="menu__item">
+                <a href="#offer" class="menu-link">
+                    {{ $t("message.offer") }}
+                </a>
+            </div>
+            <div class="menu__item">
+                <a href="#cases" class="menu-link">
+                    {{ $t("message.cases") }}
+                </a>
+            </div>
+            <div class="menu__item">
+                <a href="#contacts" class="menu-link">
+                    {{ $t("message.contacts") }}
+                </a>
+            </div>
         </nav>
     </div>
 </template>

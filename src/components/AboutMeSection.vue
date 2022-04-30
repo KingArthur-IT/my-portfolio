@@ -1,6 +1,6 @@
 <template>
   <section class = "section about-me-sect" id = "about-me">
-        <h2 class = "title">Обо мне</h2>
+        <h2 class = "title">{{ $t("message.aboutMe") }}</h2>
         <div class="anim-item title-underline"></div>
         <div class="about-me-wrap">
             <div class="about-me-sect__info">
@@ -8,29 +8,29 @@
                     <li class = "about-me-list__item">
                         <div class="icon-wrapper">
                             <FlagIcon class="icon"/>
-                            30 лет, г. Мариуполь, Украина
+                            {{ $t("message.generalInfo") }}
                         </div>
                     </li>
                     <li class="about-me-list__item">
                         <div class="icon-wrapper">
                             <EducationIcon class="icon"/>
-                            <strong>Образование:</strong><br>
+                            <strong>{{ $t("message.education") }}:</strong><br>
                         </div>
-                        Математик-программист, PhD (канд. техн. наук)
+                        {{ $t("message.educationInfo") }}
                     </li>
                     <li class="about-me-list__item">
                         <div class="icon-wrapper">
                             <PersonIcon class="icon"/>
-                            Frontend developer, Преподаватель
+                            {{ $t("message.jobsInfo") }}
                         </div>
                     </li>
                     <li class="about-me-list__item">
                         <a href="https://freelancehunt.com/freelancer/KingArthur.html" target="_blank">
                             <div class="icon-wrapper">
                                 <LinkIcon class="icon"/>
-                                Профиль фрилансера
+                                {{ $t("message.profileInfo1") }}
                             </div>
-                            на freelancehunt с отзывами
+                            {{ $t("message.profileInfo2") }}
                          </a>
                     </li>
                 </ul>
@@ -54,7 +54,7 @@
                 </div>                
             </div>
             <div class = "technologies-md">
-                <h2 class="title">Стек технологий</h2>
+                <h2 class="title">{{ $t("message.stack") }}</h2>
                 <div class="anim-item title-underline"></div>
                 <img src="@/assets/img/Stack.jpg" alt="" class = "technologies-md__img">
             </div>

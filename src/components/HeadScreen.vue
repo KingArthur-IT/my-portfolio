@@ -4,7 +4,9 @@
         <div class="header__main-info">
             <h1 class="header__title">{{ $t("message.myName") }}</h1>
             <div class = "anim-item header__line"></div>
-            <h2 class = "anim-item header__subtitle">Сайт-портфолио <br> веб-разработчика</h2>
+            <h2 class = "anim-item header__subtitle">
+                {{ $t("message.head1") }}<br>{{ $t("message.head2") }}
+            </h2>
         </div>       
     </header>
 </template>
