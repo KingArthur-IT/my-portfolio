@@ -1,5 +1,6 @@
 <template>
   <Navbar />
+  <LanguageSelect />
   <HeadScreen />
   <AboutMeSection />
   <OfferSection />
@@ -11,6 +12,7 @@
 
 <script setup>
 import Navbar from '@/components/Navbar.vue';
+import LanguageSelect from '@/components/LanguageSelect.vue';
 import HeadScreen from '@/components/HeadScreen.vue';
 import AboutMeSection from '@/components/AboutMeSection.vue';
 import OfferSection from '@/components/OfferSection.vue';

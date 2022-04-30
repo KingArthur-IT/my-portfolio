@@ -2,7 +2,7 @@
     <header class="header">
         <canvas class="header__canvas" id="header-canvas"></canvas>
         <div class="header__main-info">
-            <h1 class="header__title">Артем Остапенко</h1>
+            <h1 class="header__title">{{ $t("message.myName") }}</h1>
             <div class = "anim-item header__line"></div>
             <h2 class = "anim-item header__subtitle">Сайт-портфолио <br> веб-разработчика</h2>
         </div>       

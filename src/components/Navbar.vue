@@ -1,6 +1,6 @@
 <template>
-    <div class="nav-bar" :class="{'clicked': navbarShown}" @click="navbarClick">
-        <div class="nav-bar__btn">
+    <div class="nav-bar" :class="{'clicked': navbarShown}">
+        <div class="nav-bar__btn" @click="navbarClick">
             <Hamburger :isActive="navbarShown"/>
         </div>
         <nav class="menu" :class="{'clicked': navbarShown}">
