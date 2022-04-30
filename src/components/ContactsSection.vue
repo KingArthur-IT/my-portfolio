@@ -1,8 +1,8 @@
 <template>
     <section class = "section" id = "contacts">
-        <h2 class="title">Мои контакты</h2>
+        <h2 class="title">{{ $t("message.myContacts") }}</h2>
         <div class="anim-item title-underline"></div>
-        <h2 class="call-to-action">Напишите мне и мы обсудим Ваш проект!</h2>
+        <h2 class="call-to-action">{{ $t("message.writeMeToDiscuss") }}!</h2>
         <div class="contacts-wrap">
             <ul class = "contacts-list">
                 <!--
@@ -14,13 +14,13 @@
                 <li class = "anim-item contacts-list__item">
                     <MailIcon class="contact-icon"/>
                     <a href="mailto:ostapenko.web.7@gmail.com" class = "contact-link">
-                    Напишите мне на e-mail: ostapenko.web.7@gmail.com
+                    {{ $t("message.writeMeOnEmail") }}: ostapenko.web.7@gmail.com
                     </a>
                 </li>
                 <li class = "anim-item contacts-list__item">
                     <TelegramIcon class="contact-icon"/>
                     <a href="https://telegram.me/SantasDeer" class = "contact-link">
-                        Напишите мне в телеграм
+                        {{ $t("message.writeOnTelegram") }}
                     </a>
                 </li>
             </ul>

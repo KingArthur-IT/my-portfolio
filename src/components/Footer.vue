@@ -2,8 +2,8 @@
     <footer class = "footer">
         <div class="footer-wrap">
             <div class="footer__info">
-                <div class="info-name">Артем Остапенко | Frontend developer</div>
-                <div class="info-description">(c) 2022</div>
+                <div class="info-name">{{ $t("message.myName") }} | Frontend developer</div>
+                <div class="info-description">(c) {{currentYear}}</div>
             </div>
             <div class="footer__socials">
                 <a href="https://telegram.me/SantasDeer">
@@ -28,7 +28,13 @@
 
 <script>
 export default {
+  setup(){
+    const currentYear = new Date().getFullYear()
 
+    return{
+      currentYear
+    }
+  }
 }
 </script>
 

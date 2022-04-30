@@ -26,7 +26,7 @@ html{
 }
     
 .colored-sect{
-  background-color: rgba(var(--first),0.2)
+  background:linear-gradient(140deg, rgba(193,200,199,0.6) 0%, rgba(193,200,199,0) 99%)
 }
     
 .title{

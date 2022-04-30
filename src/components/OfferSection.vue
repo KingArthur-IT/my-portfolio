@@ -2,60 +2,29 @@
     <section class = "section colored-sect" id = "offer">
         <img src="@/assets/img/decoration-offer-left.svg" alt="" class="decoration-img decoration-left">
         <img src="@/assets/img/decoration-offer-right.svg" alt="" class="decoration-img decoration-right">
-        <h2 class="title">Что я могу Вам предложить?</h2>
+        <h2 class="title">{{ $t("message.whatCanIOffer") }}?</h2>
         <div class="anim-item title-underline"></div>
-        <h3 class="wrapper-title">Создание веб-сайтов и веб-приложений</h3>
+        <h3 class="wrapper-title">{{ $t("message.webSitesCreation") }}</h3>
         <div class="sites-wrapper">
-            <div class="anim-item sites-wrapper__item">
+            <div v-for="(cite, i) in citesCreationList" :key="i"
+                 class="anim-item sites-wrapper__item">
                 <img src="@/assets/img/paperclip.svg" class="paperclip">                
-                <div class = "item-title">Landing Page</div>
+                <div class = "item-title">{{ $t(`message.${cite.title}`) }}</div>
                 <div class="item-underline"></div>
                 <p class="item-description">
-                    Веб-страница, основной задачей которой является целевое действие: сбор контактных данных целевой аудитории, подписка, реклама продукта, его покупка.
-                </p>
-            </div>
-            <div class="anim-item sites-wrapper__item">
-                <img src="@/assets/img/paperclip.svg" class="paperclip">
-                <div class="item-title">Сайт визитка</div>
-                <div class="item-underline"></div>
-                <p class="item-description">
-                    Отличное решение для правильного позиционирования Вашего бренда.
-                </p>
-            </div>
-            <div class="anim-item sites-wrapper__item">
-                <img src="@/assets/img/paperclip.svg" class="paperclip">
-                <div class="item-title">3D сцены</div>
-                <div class="item-underline"></div>
-                <p class="item-description">
-                    Создание 2D и 3D сцен, симуляций, анимаций или демонстраций на основе JS, WebGL, Three.js.
+                    {{ $t(`message.${cite.content}`) }}.
                 </p>
             </div>
         </div>
-        <h3 class="wrapper-title">Что включает в себя продакшн продукта?</h3>
+        <h3 class="wrapper-title">{{ $t("message.productionRezult") }}?</h3>
         <div class="sites-wrapper">
-            <div class="anim-item sites-wrapper__item">
+            <div v-for="(item,i) in productionList" :key="i" 
+                 class="anim-item sites-wrapper__item">
                 <img src="@/assets/img/paperclip.svg" class="paperclip">
-                <div class="item-title">Адаптивность</div>
+                <div class="item-title">{{ $t(`message.${item.title}`) }}</div>
                 <div class="item-underline"></div>
                 <p class="item-description">
-                    Ваш сайт будет корректно отображаться на экранах всех смартфонов, планшетов и ПК. Все для удобство Ваших клиентов.
-                </p>
-            </div>
-            <div class="anim-item sites-wrapper__item">
-                <img src="@/assets/img/paperclip.svg" class="paperclip">
-                <div class="item-title">Кроссбраузерность</div>
-                <div class="item-underline"></div>
-                <p class="item-description">
-                    Ваш сайт будет правильно отображаться во всех современных браузерах и на различных операционных системах.
-                </p>
-            </div>
-            <div class="anim-item sites-wrapper__item">
-                <img src="@/assets/img/paperclip.svg" class="paperclip">
-                <div class="item-title">Анимация</div>
-                <div class="item-underline"></div>
-                <p class="item-description">
-                    Анимации, интересные итерактивные элементы, 3D модели на сайте повышают интерес к вашему продукту и 
-                    доверие потенциальных клиентов к Вашем бизнесу. А доверие приносит прибыль!
+                    {{ $t(`message.${item.content}`) }}.
                 </p>
             </div>
         </div>
@@ -64,7 +33,24 @@
 
 <script>
 export default {
+    setup(){
+        const citesCreationList = [
+            {title: 'citesTitle', content: 'citesInfo'},
+            {title: 'frameworksTitle', content: 'frameworksInfo'},
+            {title: 'threeDTitle', content: 'threeDInfo'}
+        ]
 
+        const productionList = [
+            {title: 'adaptiveTitle', content: 'adaptiveInProduction'},
+            {title: 'useFrameworksTitle', content: 'useFrameworksInfo'},
+            {title: 'animationsTitle', content: 'animationsInProduction'}
+        ]
+
+        return{
+            citesCreationList,
+            productionList
+        }
+    }
 }
 </script>
 

@@ -1,23 +1,23 @@
 <template>
     <section class = "section colored-sect">
-        <h2 class="title">Принципы работы</h2>
+        <h2 class="title">{{ $t("message.workConditions") }}</h2>
         <div class="anim-item title-underline"></div>
         <div class="work-wrapper">
             <div class="work-item anim-item">
                 <h2 class="work-item__number">- 01 -</h2>
-                <h3 class="work-item__title">Максимальная вовлеченность в ваш бизнес</h3>
+                <h3 class="work-item__title">{{ $t("message.maxInvolvement") }}</h3>
             </div>
             <div class="work-item anim-item">
                 <h2 class="work-item__number">- 02 -</h2>
-                <h3 class="work-item__title">Постоянная обратная связь в удобных для Вас каналах коммуникации</h3>
+                <h3 class="work-item__title">{{ $t("message.constCallback") }}</h3>
             </div>
             <div class="work-item anim-item">
                 <h2 class="work-item__number">- 03 -</h2>
-                <h3 class="work-item__title">Гибкая система оплаты</h3>
+                <h3 class="work-item__title">{{ $t("message.maxRezult") }}</h3>
             </div>
             <div class="work-item anim-item">
                 <h2 class="work-item__number">- 04 -</h2>
-                <h3 class="work-item__title">Обучение работы с сайтом</h3>
+                <h3 class="work-item__title">{{ $t("message.readThoughts") }}</h3>
             </div>
         </div>
     </section>
@@ -32,7 +32,8 @@ export default {
 <style scoped>
 .work-wrapper {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around; 
+}
 
 .work-item {
   flex-basis: 20%;
