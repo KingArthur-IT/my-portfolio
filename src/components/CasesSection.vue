@@ -2,14 +2,16 @@
     <section class="section" id = "cases">
         <h2 class="title">Последние проекты</h2>
         <div class="anim-item title-underline"></div>  
-        <div v-for="project in projectsList" :key="project.id" class="case-item anim-item">
+        <div v-for="project in projectsList.filter((item, i) => {return i < projectsList.length && i > projectsList.length - showCasesCount}).reverse()" 
+             :key="project.id" class="case-item anim-item" :class="{'anim-active': project.id < showCasesCount}"
+        >
             <div class="case-item__img">
-                <img :src="getImageUrl(project.imgName)" :alt="project.imgName" class="anim-item">
+                <img :src="getImageUrl(project.imgName)" :alt="project.imgName" class="anim-item" :class="{'anim-active': project.id < showCasesCount}">
             </div>
             <div class="case-item__description"> 
                 <h3 class="case-item__title">{{project.title}}</h3>
                 <p class="case-item__text">
-                    <strong>Исходные данные:</strong> {{project.startData}}.
+                    <strong>Исходные данные:</strong> {{project.startData}}
                 </p>
                 <p class="case-item__text">
                     <strong>Объем выполненной работы:</strong>
@@ -27,12 +29,20 @@
                 </a>
             </div>
         </div>
+        <div class="more-btn-wrapper">
+            <button v-if="showCasesCount < projectsList.length" @click="MoreEvent">Больше</button>
+        </div>
     </section>
 </template>
 
 <script>
+import { ref } from 'vue'
+
 export default {
     setup(){
+        let showCasesCount = ref(5);
+        const showCasesStep = 5;
+
         const getImageUrl = (imgName) => {
             return new URL(`../assets/img/previews/${imgName}.jpg`, import.meta.url).href
         }
@@ -218,10 +228,35 @@ export default {
                 rezult: 'Single Page Application',
                 href: ''
             },
+            {
+                id: 13,
+                imgName: 'mealco',
+                title: 'Landing page on NuxtJS',
+                startData: 'Дизайн-макет, ТЗ',
+                progressList: [
+                    'Создание ряда пользовательских UI компонент, сладеров, форм без использования UI фреймворков',
+                    'Создание анимаций (по скроллу, перехода страниц, UI элементов, плавающих элементов)',
+                    'Адаптивная, кроссбраузерная верстка',
+                ],
+                rezult: 'SSR Landing page',
+                href: 'https://mealco.co/'
+            },
         ]
 
+        function MoreEvent(){
+            if (showCasesStep + showCasesCount.value <= projectsList.length){
+                showCasesCount.value += showCasesStep
+            }
+            else {
+                showCasesCount.value = projectsList.length;
+            }
+        }
+
         return {
+            showCasesCount,
+            showCasesStep,
             getImageUrl,
+            MoreEvent,
             projectsList
         }
     }
@@ -318,4 +353,25 @@ export default {
     .case-item__img {
       width: 90%; } }
 
+.more-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.more-btn-wrapper button{
+    height: 50px;
+    width: 200px;
+    background: var(--third);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all 0.3s ease-out;
+}
+.more-btn-wrapper button:hover{
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
 </style>
