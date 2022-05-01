@@ -88,6 +88,7 @@ export default {
 }
 .menu.clicked{
     width: 100%;
+    margin-right: 59px;
 }
 .menu-link{
     color: #fff;
@@ -112,5 +113,29 @@ export default {
     top: 59px;
     left: 0px;
     width: 60px;
+}
+
+@media screen and (max-width: 740px) {
+    .clicked .menu__item{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .clicked .menu__item{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .clicked .menu__item:nth-child(1){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .clicked .menu__item:nth-child(2){
+        display: none;
+    }
 }
 </style>

@@ -50,45 +50,52 @@ export default {
 <style scoped>
 .call-to-action {
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px; 
+}
 
 .contacts-wrap {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around; 
+}
 
 .contacts-list {
   list-style: none;
   font-size: 24px;
   flex-basis: 45%;
   padding: 0;
-  margin-left: 20px; }
-  .contacts-list__item {
-    margin-bottom: 15px;
-    padding: 0;
-    display: block;
-    position: relative;
-    padding: 10px 20px;
-    cursor: pointer;
-    transform: translateX(-500px);
-    transition: transform 0.8s ease-in-out; }
-    .contacts-list__item:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background: var(--third);
-      z-index: -1;
-      transform: scaleX(0);
-      transform-origin: 0% 100%;
-      transition: transform 0.5s ease; }
-    .contacts-list__item:hover {
-      color: #fff; }
-      .contacts-list__item:hover:before {
-        transform: scaleX(1); }
-    .contacts-list__item.anim-active {
-      transform: translateX(0px); }
+  margin-left: 20px; 
+}
+.contacts-list__item {
+  margin-bottom: 15px;
+  padding: 0;
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  transform: translateX(-500px);
+  transition: transform 0.8s ease-in-out; 
+}
+.contacts-list__item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--third);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: 0% 100%;
+  transition: transform 0.5s ease; 
+}
+.contacts-list__item:hover {
+  color: #fff; 
+}
+.contacts-list__item:hover:before {
+  transform: scaleX(1); 
+}
+.contacts-list__item.anim-active {
+  transform: translateX(0px); }
 
 .contact-icon {
   width: 20px;
@@ -148,7 +155,9 @@ export default {
     flex-direction: column; }
   .contact-img {
     width: 80%;
-    margin: auto; }
+    margin: auto; 
+    margin-top: 10px;
+  }
   .call-to-action {
     text-align: center;
     margin-bottom: 40px; }
@@ -161,7 +170,12 @@ export default {
 
 @media screen and (max-width: 600px) {
   .contact-form {
-    width: 90%; } }
+    width: 90%; 
+  } 
+  .contacts-list__item {
+    transform: translateX(0px);
+  }
+}
 
 @media screen and (max-width: 400px) {
   .contacts-list {

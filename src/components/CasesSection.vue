@@ -270,41 +270,50 @@ export default {
   justify-content: space-between;
   padding: 2% 5%;
   transform: translateX(-100%);
-  transition: all 1.5s ease-in-out; }
-  .case-item.anim-active {
-    transform: translateX(0%); }
-  .case-item__title {
+  transition: all 1.5s ease-in-out; 
+}
+.case-item.anim-active {
+    transform: translateX(0%); 
+}
+.case-item__title {
     font-size: 28px;
     margin: 0;
-    margin-bottom: 4%; }
-  .case-item__img {
+    margin-bottom: 4%; 
+}
+.case-item__img {
     flex-basis: 33%;
     width: 33%;
-    overflow: hidden; }
-    .case-item__img img {
-      width: 100%;
-      border-radius: 10px;
-      opacity: 0;
-      transform: scale(2);
-      transition: all 1.5s ease-in-out;
-       }
-      .case-item__img img.anim-active {
-        opacity: 1;
-        transform: scale(1); }
-  .case-item__description {
+    overflow: hidden; 
+}
+.case-item__img img {
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(2);
+    transition: all 1.5s ease-in-out;
+}
+.case-item__img img.anim-active {
+    opacity: 1;
+    transform: scale(1); 
+}
+.case-item__description {
     font-size: 18px;
-    flex-basis: 60%; }
-  .case-item__text {
+    flex-basis: 60%; 
+}
+.case-item__text {
     margin: 0;
     line-height: 1.5;
-    margin-bottom: 1%; }
-  .case-item__link {
+    margin-bottom: 1%; 
+}
+.case-item__link {
     margin-top: 2%;
     cursor: pointer;
     display: block;
-    font-weight: bold; }
-    .case-item__link:hover {
-      color: var(--third); }
+    font-weight: bold; 
+}
+.case-item__link:hover {
+    color: var(--third); 
+}
 
 .case-list {
     margin: 0;
@@ -373,5 +382,15 @@ export default {
 }
 .more-btn-wrapper button:hover{
     box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+    .case-item {
+        transform: translateX(0%);
+    }
+    .case-item__img img {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 </style>

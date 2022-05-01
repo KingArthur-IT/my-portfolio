@@ -127,6 +127,7 @@ onMounted(() => {
     .header__title{
         font-size: 60px;
         color: #fff;
+        text-shadow: 2px 2px 2px var(--second);
     }
     .header__subtitle{
         font-size: 32px;
@@ -149,6 +150,15 @@ onMounted(() => {
         width: 250px;
         margin-bottom: 10px;
     }     
+}
+
+@media screen and ( max-width: 420px ){
+    .header__title{
+        font-size: 40px;
+    }       
+    .header__subtitle{
+        font-size: 26px;
+    }   
 }
     
 @media screen and ( max-width: 350px ){
