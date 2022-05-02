@@ -153,26 +153,14 @@ onMounted(() => {
 }
 
 @media screen and ( max-width: 420px ){
-    .header__title{
-        font-size: 40px;
-    }       
-    .header__subtitle{
-        font-size: 26px;
-    }   
+    .header__main-info{
+        padding: 40px 20px;
+    } 
 }
     
 @media screen and ( max-width: 350px ){
     .header__title{
-        font-size: 42px;
-    }
-    .header__subtitle{
-        font-size: 28px;
-    }
-}
-    
-@media screen and ( max-width: 300px ){
-    .header__title{
-        font-size: 34px;   
+        font-size: 36px;   
     }
     .header__subtitle{
         font-size: 24px;

@@ -387,10 +387,15 @@ export default {
 @media screen and (max-width: 600px) {
     .case-item {
         transform: translateX(0%);
+        margin-top: 10px;
     }
     .case-item__img img {
         opacity: 1;
         transform: scale(1);
+    }
+    .case-item__description{
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--third);
     }
 }
 </style>
