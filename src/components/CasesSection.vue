@@ -2,11 +2,11 @@
     <section class="section" id = "cases">
         <h2 class="title">{{ $t("message.lastCases") }}</h2>
         <div class="anim-item title-underline"></div>  
-        <div v-for="project in projectsList.filter((item, i) => {return i < projectsList.length && i > projectsList.length - showCasesCount}).reverse()" 
-             :key="project.id" class="case-item anim-item" :class="{'anim-active': project.id < showCasesCount}"
+        <div v-for="(project, index) in progressListShown" 
+             :key="project.id" class="case-item anim-item" :class="{'anim-active': index <= showCasesCount}"
         >
             <div class="case-item__img">
-                <img :src="getImageUrl(project.imgName)" :alt="project.imgName" class="anim-item" :class="{'anim-active': project.id < showCasesCount}">
+                <img :src="getImageUrl(project.imgName)" :alt="project.imgName" class="anim-item" :class="{'anim-active': index <= showCasesCount}">
             </div>
             <div class="case-item__description"> 
                 <h3 class="case-item__title">{{project.title}}</h3>
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 export default {
     setup(){
@@ -241,6 +241,34 @@ export default {
                 rezult: 'SSR Landing page',
                 href: 'https://mealco.co/'
             },
+            {
+                id: 14,
+                imgName: 'calculators',
+                title: 'Mortgage calculators',
+                startData: 'ТЗ, референс калькулятора, верстка форм',
+                progressList: [
+                    'Определение формул калькуляторов по референсу',
+                    'Создание круговых и столбиковых диаграм, настройка внешнего вида и функционала, настройка анимаций диаграмм',
+                    'Программирования калькулятора и интеграктивного изменения результатов в ответ на изменение данных',
+                    'Создание масок для числовых значений',
+                    'Создание адаптивности',
+                ],
+                rezult: 'Интерактивные калькуляторы с анимациями',
+                href: 'https://kingarthur-it.github.io/calculators/'
+            },
+            {
+                id: 15,
+                imgName: 'gioconostro',
+                title: 'Личный кабинет на Vue3',
+                startData: 'ТЗ, дизайн-макет',
+                progressList: [
+                    'Адаптивная верстка',
+                    'Создание вкладок, модальных окон, кастомных компонент, масок ввода, вилидаторов, работа с layouts, настройка смены темы, мультиязычность, пагинация, фильтры',
+                    'Работа с API: запросы для регистрации, авторизации, сброса пароля, получения и обновления пользовательский данных, получение данных таблиц',
+                ],
+                rezult: 'Личный кабинет',
+                href: 'https://gioconostro.com/'
+            },
         ]
 
         function MoreEvent(){
@@ -252,12 +280,17 @@ export default {
             }
         }
 
+        let progressListShown = computed(() => {
+            return projectsList.filter((item, i) => {return i < projectsList.length && i > projectsList.length - showCasesCount.value}).reverse()
+        })
+
         return {
             showCasesCount,
             showCasesStep,
             getImageUrl,
             MoreEvent,
-            projectsList
+            projectsList,
+            progressListShown
         }
     }
 }
