@@ -12,9 +12,6 @@
                 <a href="https://www.instagram.com/king_arthur2017">
                     <img src="@/assets/img/socials/instagram_icon.svg" alt="" class="socials-img">    
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100048966681536">
-                    <img src="@/assets/img/socials/facebook_icon.svg" alt="" class="socials-img">
-                </a>
                 <a href="mailto:ostapenko.web.7@gmail.com">
                     <img src="@/assets/img/socials/google_icon.svg" alt="" class="socials-img">
                 </a>
