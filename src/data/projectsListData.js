@@ -224,7 +224,7 @@ export const projectsList = [
     },
     {
         id: 15,
-        imgName: 'gioconostro',
+        imgName: 'itBase',
         title: 'Сайт с анимациями',
         startData: 'ТЗ, дизайн-макет',
         progressList: [
@@ -236,7 +236,7 @@ export const projectsList = [
         tags: ['Верстка', 'Анимация']
     },
     {
-        id: 15,
+        id: 16,
         imgName: 'gioconostro',
         title: 'Личный кабинет на Vue3',
         startData: 'ТЗ, дизайн-макет',
@@ -248,5 +248,19 @@ export const projectsList = [
         rezult: 'Личный кабинет',
         href: 'https://gioconostro.com/',
         tags: ['VueJS']
+    },
+    {
+        id: 17,
+        imgName: 'severin',
+        title: 'Программирование анимаций, интерактива и создание кастомного слайдера на NuxtJS',
+        startData: 'ТЗ, верстка страниц',
+        progressList: [
+            'Создание различных анимаций элементов при переключении страниц',
+            'Создание кастомного слайдера',
+            'Настройка бургера, меню, локализации',
+        ],
+        rezult: 'Сайт на NuxtJS',
+        href: '',
+        tags: ['VueJS', 'NuxtJS', 'Анимация']
     },
 ]
