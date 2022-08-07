@@ -263,4 +263,17 @@ export const projectsList = [
         href: '',
         tags: ['VueJS', 'NuxtJS', 'Анимация']
     },
+    {
+        id: 18,
+        imgName: 'pubTV',
+        title: 'Верстка и программирование сайта на Vue3',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Верстка, создание ряда кастомных компонент и анимаций',
+            'Программирование функционала: модальные окна, слайдеры, фильтрация, валидация данных',
+        ],
+        rezult: 'Сайт на Vue3',
+        href: 'https://friendly-choux-fbae6f.netlify.app/',
+        tags: ['VueJS', 'Анимация']
+    },
 ]
