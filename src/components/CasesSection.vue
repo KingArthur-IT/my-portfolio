@@ -2,6 +2,12 @@
     <section class="section" id = "cases">
         <h2 class="title">{{ $t("message.lastCases") }}</h2>
         <div class="anim-item title-underline"></div>  
+
+        <div class="case-item anim-item tags-wrapper">
+            <div class="tag" :class="{'active-filter': selectedFilter === ''}" @click="selectedFilter = ''">Все категории</div>
+            <div class="tag" v-for="(tag, i) in tags" :key="i" :class="{'active-filter': selectedFilter === tag}" @click="selectedFilter = tag"># {{tag}}</div>
+        </div>
+
         <div v-for="(project, index) in progressListShown" 
              :key="project.id" class="case-item anim-item" :class="{'anim-active': index <= showCasesCount}"
         >
@@ -35,14 +41,14 @@
             </div>
         </div>
         <div class="more-btn-wrapper">
-            <button v-if="showCasesCount < projectsList.length" @click="MoreEvent">Больше</button>
+            <button v-if="showCasesCount < filteredList.length" @click="MoreEvent">Больше</button>
         </div>
     </section>
 </template>
 
 <script>
 import { ref, computed } from 'vue'
-import { projectsList } from '../data/projectsListData.js'
+import { projectsList, tags } from '../data/projectsListData.js'
 
 export default {
     setup(){
@@ -51,20 +57,29 @@ export default {
 
         const getImageUrl = (imgName) => {
             return new URL(`../assets/img/previews/${imgName}.jpg`, import.meta.url).href
-        }
+        };
+
+        const selectedFilter = ref('');
 
         function MoreEvent(){
-            if (showCasesStep + showCasesCount.value <= projectsList.length){
+            if (showCasesStep + showCasesCount.value <= filteredList.value.length){
                 showCasesCount.value += showCasesStep
             }
             else {
-                showCasesCount.value = projectsList.length;
+                showCasesCount.value = filteredList.value.length;
             }
         }
 
+        let filteredList = computed(() => {
+            if (selectedFilter.value !== ''){
+                return projectsList.filter((item) => {return item.tags.some(el => el === selectedFilter.value)});
+            }
+            else return projectsList;
+        });
+
         let progressListShown = computed(() => {
-            return projectsList.filter((item, i) => {return i < projectsList.length && i > projectsList.length - showCasesCount.value}).reverse()
-        })
+            return filteredList.value.slice(filteredList.value.length - showCasesCount.value, filteredList.value.length).reverse()
+        });
 
         return {
             showCasesCount,
@@ -72,7 +87,10 @@ export default {
             getImageUrl,
             MoreEvent,
             projectsList,
-            progressListShown
+            tags,
+            progressListShown,
+            filteredList,
+            selectedFilter
         }
     }
 }
@@ -150,6 +168,16 @@ export default {
     padding: 0 10px;
 }
 .tag:hover{
+    color: var(--third); 
+}
+.tags-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags-wrapper .tag{
+    cursor: pointer;
+}
+.active-filter{
     color: var(--third); 
 }
 

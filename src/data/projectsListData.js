@@ -277,3 +277,5 @@ export const projectsList = [
         tags: ['VueJS', 'Анимация']
     },
 ]
+
+export const tags = ['VueJS', 'Анимация', 'NuxtJS', 'Верстка', 'JS', '3D', 'ThreeJS', 'WebGL']
