@@ -173,6 +173,7 @@ export default {
 .tags-wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .tags-wrapper .tag{
     cursor: pointer;
@@ -205,7 +206,9 @@ export default {
     padding: 0; }
     .case-list__item {
       text-align: justify; } }
-
+    .tags-wrapper{
+        flex-direction: row;
+    }
 @media screen and (max-width: 750px) {
   .case-item__img {
     width: 70%; } }
