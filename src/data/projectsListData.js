@@ -194,6 +194,32 @@ export const projectsList = [
     },
     {
         id: 13,
+        imgName: 'maricano',
+        title: 'Разработка лендинга Maricano Digital на VueJS.',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Разработка кастомных компонент, анимаций, слайдеров',
+            'Верстка и программирование функционала'
+        ],
+        rezult: 'Single Page Application',
+        href: 'https://www.maricano-digital.com/',
+        tags: ['VueJS']
+    },
+    {
+        id: 14,
+        imgName: 'qwerta',
+        title: 'Разработка блока c 3D анимацией',
+        startData: 'ТЗ, референс',
+        progressList: [
+            'Создание 3D сцены из букв и рамок',
+            'Программирование анимации сцены при перемещении курсора'
+        ],
+        rezult: 'блок сайта с 3D сценой',
+        href: 'https://kingarthur-it.github.io/3DLetters/',
+        tags: ['ThreeJS', 'Анимация']
+    },
+    {
+        id: 15,
         imgName: 'mealco',
         title: 'Landing page on NuxtJS',
         startData: 'Дизайн-макет, ТЗ',
@@ -207,7 +233,7 @@ export const projectsList = [
         tags: ['VueJS', 'NuxtJS', 'Анимация']
     },
     {
-        id: 14,
+        id: 16,
         imgName: 'calculators',
         title: 'Mortgage calculators',
         startData: 'ТЗ, референс калькулятора, верстка форм',
@@ -223,7 +249,7 @@ export const projectsList = [
         tags: ['JS']
     },
     {
-        id: 15,
+        id: 17,
         imgName: 'itBase',
         title: 'Сайт с анимациями',
         startData: 'ТЗ, дизайн-макет',
@@ -236,7 +262,7 @@ export const projectsList = [
         tags: ['Верстка', 'Анимация']
     },
     {
-        id: 16,
+        id: 18,
         imgName: 'gioconostro',
         title: 'Личный кабинет на Vue3',
         startData: 'ТЗ, дизайн-макет',
@@ -250,7 +276,7 @@ export const projectsList = [
         tags: ['VueJS']
     },
     {
-        id: 17,
+        id: 19,
         imgName: 'severin',
         title: 'Программирование анимаций, интерактива и создание кастомного слайдера на NuxtJS',
         startData: 'ТЗ, верстка страниц',
@@ -264,7 +290,7 @@ export const projectsList = [
         tags: ['VueJS', 'NuxtJS', 'Анимация']
     },
     {
-        id: 18,
+        id: 20,
         imgName: 'pubTV',
         title: 'Верстка и программирование сайта на Vue3',
         startData: 'ТЗ, дизайн-макет в Figma',
