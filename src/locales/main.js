@@ -41,7 +41,12 @@ export const localesTexts = {
             animationsTitle: 'Animations and interactive',
             animationsInProduction: 'Animations, interesting and interactive elements, 3D models on the site increase interest in your product and the trust of potential customers in your business',
 
-            lastCases: 'Last cases'
+            lastCases: 'Last cases',
+
+            experience: 'In commercial web development',
+            doneProjects: 'Completed projects',
+            reviewsCount: 'Verified Reviews',
+            yearShort: 'y'
         }
     },
     uk: {
@@ -86,7 +91,12 @@ export const localesTexts = {
             animationsTitle: 'Анімації та інтерактив',
             animationsInProduction: 'Анімації, цікаві ітерактивні елементи, 3D моделі на сайті підвищують інтерес до вашого продукту та довіру потенційних клієнтів до Вашого бізнесу',
 
-            lastCases: 'Останні проекти'
+            lastCases: 'Останні проекти',
+
+            experience: 'У комерційній веб-разробці',
+            doneProjects: 'Виконанних проектів',
+            reviewsCount: 'Підтверджених відгуків',
+            yearShort: 'р'
         }
     },
     ru: {
@@ -131,8 +141,12 @@ export const localesTexts = {
             animationsTitle: 'Анимации и интерактив',
             animationsInProduction: 'Анимации, интересные итерактивные элементы, 3D модели на сайте повышают интерес к вашему продукту и доверие потенциальных клиентов к Вашем бизнесу',
 
-            lastCases: 'Последние проекты'
+            lastCases: 'Последние проекты',
 
+            experience: 'В комерческой веб-разработке',
+            doneProjects: 'Выполненных проектов',
+            reviewsCount: 'Подтвержденных отзывов',
+            yearShort: 'г'
     }
       },
   }

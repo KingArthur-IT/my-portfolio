@@ -1,17 +1,17 @@
 <template>
     <div class="section advantages">
         <div class="advantages__item">
-            <div class="advantages__text">В комерческой веб-разработке</div>
-            <span>>1,5 г</span>
+            <div class="advantages__text">{{ $t("message.experience") }}</div>
+            <span>>1,5 {{ $t("message.yearShort") }}</span>
         </div>
         <div class="advantages__item">
-            <div class="advantages__text">Выполненных проектов</div>
+            <div class="advantages__text">{{ $t("message.doneProjects") }}</div>
             <a href="#cases" rel="noopener noreferrer">
                 <span>40 +</span>
             </a>
         </div>
         <div class="advantages__item">
-            <div class="advantages__text">Подтвержденных отзывов</div>
+            <div class="advantages__text">{{ $t("message.reviewsCount") }}</div>
             <a href="https://freelancehunt.com/freelancer/KingArthur.html" target="_blank" rel="noopener noreferrer">
                 <span>18 +</span>
             </a>
