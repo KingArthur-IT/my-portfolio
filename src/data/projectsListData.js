@@ -250,6 +250,20 @@ export const projectsList = [
     },
     {
         id: 17,
+        imgName: 'medVR',
+        title: 'Обучающая VR симуляция',
+        startData: 'ТЗ, 2D референс',
+        progressList: [
+            'Создание 3D VR симуляции на ThreeJS',
+            'Добавление объектов и программированиие их функционала, кастомные tooltops, кастомные колайдеры для объектов',
+            'Создание кастомных UI, программирование функционала всей симуляции, поведения UI элементов, контроллеров',
+        ],
+        rezult: 'Обучающая VR симуляция',
+        href: 'https://kingarthur-it.github.io/MedVRSimulation/',
+        tags: ['3D', 'ThreeJS', 'VR']
+    },
+    {
+        id: 18,
         imgName: 'itBase',
         title: 'Сайт с анимациями',
         startData: 'ТЗ, дизайн-макет',
@@ -262,7 +276,7 @@ export const projectsList = [
         tags: ['Верстка', 'Анимация']
     },
     {
-        id: 18,
+        id: 19,
         imgName: 'gioconostro',
         title: 'Личный кабинет на Vue3',
         startData: 'ТЗ, дизайн-макет',
@@ -276,7 +290,7 @@ export const projectsList = [
         tags: ['VueJS']
     },
     {
-        id: 19,
+        id: 20,
         imgName: 'severin',
         title: 'Программирование анимаций, интерактива и создание кастомного слайдера на NuxtJS',
         startData: 'ТЗ, верстка страниц',
@@ -290,7 +304,7 @@ export const projectsList = [
         tags: ['VueJS', 'NuxtJS', 'Анимация']
     },
     {
-        id: 20,
+        id: 21,
         imgName: 'pubTV',
         title: 'Верстка и программирование сайта на Vue3',
         startData: 'ТЗ, дизайн-макет в Figma',
