@@ -300,7 +300,7 @@ export const projectsList = [
             'Настройка бургера, меню, локализации',
         ],
         rezult: 'Сайт на NuxtJS',
-        href: 'https://beamish-basbousa-e91d6a.netlify.app',
+        href: '',
         tags: ['VueJS', 'NuxtJS', 'Анимация']
     },
     {
