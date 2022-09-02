@@ -1,7 +1,7 @@
 <template>
     <div class="nav-bar" :class="{'clicked': navbarShown}">
         <div class="nav-bar__btn" @click="navbarClick">
-            <Hamburger :isActive="navbarShown"/>
+            <Hamburger class="nav-bar__burger" :isActive="navbarShown"/>
         </div>
         <nav class="menu" :class="{'clicked': navbarShown}">
             <div class="menu__item">
@@ -58,6 +58,7 @@ export default {
     z-index: 12;
 }
 .nav-bar__btn{
+    position: relative;
     height: 100%;
     width: 60px;
     background-color: var(--first);
@@ -69,6 +70,17 @@ export default {
     justify-content: space-around;
     padding: 10px;
     z-index: 50;
+}
+.nav-bar__burger{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+.nav-bar__burger svg{
+    width: 45px;
+    height: 45px;
 }
 .menu{
     width: 0%;

@@ -114,3 +114,9 @@ html{
       display: none;
   }
 }
+
+
+.nav-bar__burger svg{
+  width: 45px;
+  height: 45px;
+}

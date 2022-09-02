@@ -13,7 +13,7 @@
         <div class="advantages__item">
             <div class="advantages__text">{{ $t("message.reviewsCount") }}</div>
             <a href="https://freelancehunt.com/freelancer/KingArthur.html" target="_blank" rel="noopener noreferrer">
-                <span>18 +</span>
+                <span>20 +</span>
             </a>
         </div>
     </div>
