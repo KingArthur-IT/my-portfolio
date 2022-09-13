@@ -220,6 +220,20 @@ export const projectsList = [
     },
     {
         id: 15,
+        imgName: 'severin',
+        title: 'Программирование анимаций, интерактива и создание кастомного слайдера на NuxtJS',
+        startData: 'ТЗ, верстка страниц',
+        progressList: [
+            'Создание различных анимаций элементов при переключении страниц',
+            'Создание кастомного слайдера',
+            'Настройка бургера, меню, локализации',
+        ],
+        rezult: 'Сайт на NuxtJS',
+        href: '',
+        tags: ['VueJS', 'NuxtJS', 'Анимация']
+    },
+    {
+        id: 16,
         imgName: 'mealco',
         title: 'Landing page on NuxtJS',
         startData: 'Дизайн-макет, ТЗ',
@@ -233,7 +247,7 @@ export const projectsList = [
         tags: ['VueJS', 'NuxtJS', 'Анимация']
     },
     {
-        id: 16,
+        id: 17,
         imgName: 'calculators',
         title: 'Mortgage calculators',
         startData: 'ТЗ, референс калькулятора, верстка форм',
@@ -249,7 +263,7 @@ export const projectsList = [
         tags: ['JS']
     },
     {
-        id: 17,
+        id: 18,
         imgName: 'medVR',
         title: 'Обучающая VR симуляция',
         startData: 'ТЗ, 2D референс',
@@ -263,7 +277,7 @@ export const projectsList = [
         tags: ['3D', 'ThreeJS', 'VR']
     },
     {
-        id: 18,
+        id: 19,
         imgName: 'itBase',
         title: 'Сайт с анимациями',
         startData: 'ТЗ, дизайн-макет',
@@ -276,7 +290,7 @@ export const projectsList = [
         tags: ['Верстка', 'Анимация']
     },
     {
-        id: 19,
+        id: 20,
         imgName: 'gioconostro',
         title: 'Личный кабинет на Vue3',
         startData: 'ТЗ, дизайн-макет',
@@ -289,20 +303,7 @@ export const projectsList = [
         href: '',
         tags: ['VueJS']
     },
-    {
-        id: 20,
-        imgName: 'severin',
-        title: 'Программирование анимаций, интерактива и создание кастомного слайдера на NuxtJS',
-        startData: 'ТЗ, верстка страниц',
-        progressList: [
-            'Создание различных анимаций элементов при переключении страниц',
-            'Создание кастомного слайдера',
-            'Настройка бургера, меню, локализации',
-        ],
-        rezult: 'Сайт на NuxtJS',
-        href: '',
-        tags: ['VueJS', 'NuxtJS', 'Анимация']
-    },
+    
     {
         id: 21,
         imgName: 'pubTV',
@@ -315,6 +316,19 @@ export const projectsList = [
         rezult: 'Сайт на Vue3',
         href: 'https://friendly-choux-fbae6f.netlify.app/',
         tags: ['VueJS', 'Анимация']
+    },
+    {
+        id: 22,
+        imgName: 'workee',
+        title: 'Верстка и программирование сайта на Vue3',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Верстка, создание кастомных компонент и анимаций',
+            'Локализация',
+        ],
+        rezult: 'Сайт на Vue3',
+        href: 'https://bespoke-gelato-f1c07c.netlify.app/ ',
+        tags: ['VueJS']
     },
 ]
 
