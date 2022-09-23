@@ -234,20 +234,33 @@ export const projectsList = [
     },
     {
         id: 16,
-        imgName: 'mealco',
-        title: 'Landing page on NuxtJS',
-        startData: 'Дизайн-макет, ТЗ',
+        imgName: 'gioconostro',
+        title: 'Личный кабинет на Vue3',
+        startData: 'ТЗ, дизайн-макет',
         progressList: [
-            'Создание ряда пользовательских UI компонент, сладеров, форм без использования UI фреймворков',
-            'Создание анимаций (по скроллу, перехода страниц, UI элементов, плавающих элементов)',
-            'Адаптивная, кроссбраузерная верстка',
+            'Адаптивная верстка',
+            'Создание вкладок, модальных окон, кастомных компонент, масок ввода, вилидаторов, работа с layouts, настройка смены темы, локализация, пагинация, фильтры',
+            'Работа с API: запросы для регистрации, авторизации, сброса пароля, получения и обновления пользовательский данных, получение данных таблиц',
         ],
-        rezult: 'SSR Landing page',
-        href: 'https://mealco.co/',
-        tags: ['VueJS', 'NuxtJS', 'Анимация']
+        rezult: 'Личный кабинет',
+        href: '',
+        tags: ['VueJS']
     },
     {
         id: 17,
+        imgName: 'workee',
+        title: 'Верстка и программирование сайта на Vue3',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Верстка, создание кастомных компонент и анимаций',
+            'Локализация',
+        ],
+        rezult: 'Сайт на Vue3',
+        href: 'https://bespoke-gelato-f1c07c.netlify.app/ ',
+        tags: ['VueJS']
+    },
+    {
+        id: 18,
         imgName: 'calculators',
         title: 'Mortgage calculators',
         startData: 'ТЗ, референс калькулятора, верстка форм',
@@ -263,7 +276,7 @@ export const projectsList = [
         tags: ['JS']
     },
     {
-        id: 18,
+        id: 19,
         imgName: 'medVR',
         title: 'Обучающая VR симуляция',
         startData: 'ТЗ, 2D референс',
@@ -277,7 +290,7 @@ export const projectsList = [
         tags: ['3D', 'ThreeJS', 'VR']
     },
     {
-        id: 19,
+        id: 20,
         imgName: 'itBase',
         title: 'Сайт с анимациями',
         startData: 'ТЗ, дизайн-макет',
@@ -288,24 +301,23 @@ export const projectsList = [
         rezult: 'Сайт с анимациями',
         href: 'https://kingarthur-it.github.io/itBaseCite/',
         tags: ['Верстка', 'Анимация']
-    },
-    {
-        id: 20,
-        imgName: 'gioconostro',
-        title: 'Личный кабинет на Vue3',
-        startData: 'ТЗ, дизайн-макет',
-        progressList: [
-            'Адаптивная верстка',
-            'Создание вкладок, модальных окон, кастомных компонент, масок ввода, вилидаторов, работа с layouts, настройка смены темы, локализация, пагинация, фильтры',
-            'Работа с API: запросы для регистрации, авторизации, сброса пароля, получения и обновления пользовательский данных, получение данных таблиц',
-        ],
-        rezult: 'Личный кабинет',
-        href: '',
-        tags: ['VueJS']
-    },
-    
+    },   
     {
         id: 21,
+        imgName: 'mealco',
+        title: 'Landing page on NuxtJS',
+        startData: 'Дизайн-макет, ТЗ',
+        progressList: [
+            'Создание ряда пользовательских UI компонент, сладеров, форм без использования UI фреймворков',
+            'Создание анимаций (по скроллу, перехода страниц, UI элементов, плавающих элементов)',
+            'Адаптивная, кроссбраузерная верстка',
+        ],
+        rezult: 'SSR Landing page',
+        href: 'https://mealco.co/',
+        tags: ['VueJS', 'NuxtJS', 'Анимация']
+    },
+    {
+        id: 22,
         imgName: 'pubTV',
         title: 'Верстка и программирование сайта на Vue3',
         startData: 'ТЗ, дизайн-макет в Figma',
@@ -317,19 +329,7 @@ export const projectsList = [
         href: 'https://friendly-choux-fbae6f.netlify.app/',
         tags: ['VueJS', 'Анимация']
     },
-    {
-        id: 22,
-        imgName: 'workee',
-        title: 'Верстка и программирование сайта на Vue3',
-        startData: 'ТЗ, дизайн-макет в Figma',
-        progressList: [
-            'Верстка, создание кастомных компонент и анимаций',
-            'Локализация',
-        ],
-        rezult: 'Сайт на Vue3',
-        href: 'https://bespoke-gelato-f1c07c.netlify.app/ ',
-        tags: ['VueJS']
-    },
+    
 ]
 
 export const tags = ['VueJS', 'Анимация', 'NuxtJS', 'Верстка', 'JS', '3D', 'ThreeJS', 'WebGL']
