@@ -12,7 +12,7 @@
              :key="project.id" class="case-item anim-item" :class="{'anim-active': index <= showCasesCount}"
         >
             <div class="case-item__img">
-                <img :src="getImageUrl(project.imgName)" :alt="project.imgName" class="anim-item" :class="{'anim-active': index <= showCasesCount}">
+                <img :src="getImageUrl(project.imgName, project.imgExtension)" :alt="project.imgName" class="anim-item" :class="{'anim-active': index <= showCasesCount}">
             </div>
             <div class="case-item__description"> 
                 <h3 class="case-item__title">{{project.title}}</h3>
@@ -55,8 +55,8 @@ export default {
         let showCasesCount = ref(5);
         const showCasesStep = 5;
 
-        const getImageUrl = (imgName) => {
-            return new URL(`../assets/img/previews/${imgName}.jpg`, import.meta.url).href
+        const getImageUrl = (imgName, imgExt) => {
+            return new URL(`../assets/img/previews/${imgName}.${imgExt}`, import.meta.url).href
         };
 
         const selectedFilter = ref('');

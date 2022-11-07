@@ -2,6 +2,7 @@ export const projectsList = [
     {
         id: 0,
         imgName: 'kvpm-0',
+        imgExtension: 'jpg',
         title: 'Сайт кафедры высшей и прикладной математики ГВУЗ “ПГТУ”',
         startData: 'тексты, картинки и пожелания',
         progressList: [
@@ -18,6 +19,7 @@ export const projectsList = [
     {
         id: 1,
         imgName: 'swippingMesh-0',
+        imgExtension: 'jpg',
         title: 'Интерактивная анимация движения частиц',
         startData: 'техническое задание о разроботке анимации, которая имитирует движение жидкости',
         progressList: [
@@ -33,6 +35,7 @@ export const projectsList = [
     {
         id: 2,
         imgName: 'void-0',
+        imgExtension: 'jpg',
         title: 'Верстка сайта разработки мобильных приложений и веб-сервисов',
         startData: 'дизайн-макет в Figma',
         progressList: [
@@ -46,6 +49,7 @@ export const projectsList = [
     {
         id: 3,
         imgName: 'dosport-0',
+        imgExtension: 'jpg',
         title: 'Верстка сайта спортивных площадок',
         startData: 'дизайн-макет в Figma',
         progressList: [
@@ -59,6 +63,7 @@ export const projectsList = [
     {
         id: 4,
         imgName: 'Textures-Preview-0',
+        imgExtension: 'jpg',
         title: 'Интерактивная система моделирования течений жидкости',
         startData: 'численные схемы',
         progressList: [
@@ -73,6 +78,7 @@ export const projectsList = [
     {
         id: 5,
         imgName: 'ChooseVideoScene',
+        imgExtension: 'jpg',
         title: '3D Сцена с видео текстурами',
         startData: '3D модель сцены с телевизорами',
         progressList: [
@@ -87,6 +93,7 @@ export const projectsList = [
     {
         id: 6,
         imgName: 'Calibration',
+        imgExtension: 'jpg',
         title: 'Веб симуляция калибровки медицинского оборудования',
         startData: '3D модель устройства, картинка с траекторией калибровки, фон',
         progressList: [
@@ -102,6 +109,7 @@ export const projectsList = [
     {
         id: 7,
         imgName: 'pandaSwap',
+        imgExtension: 'jpg',
         title: 'Создание главного экрана с интерактивной анимацией',
         startData: 'Макет главного экрана в Figma',
         progressList: [
@@ -115,6 +123,7 @@ export const projectsList = [
     {
         id: 8,
         imgName: 'PadPlacement',
+        imgExtension: 'jpg',
         title: 'Веб симуляция для обучающей платформы',
         startData: '3D модель тела человека, лампочки, картинка с устройством наложения, фон',
         progressList: [
@@ -132,6 +141,7 @@ export const projectsList = [
     {
         id: 9,
         imgName: 'Brookfield',
+        imgExtension: 'jpg',
         title: 'Верстка сайта на Vue.JS',
         startData: 'Дизайн-макет, ТЗ',
         progressList: [
@@ -147,6 +157,7 @@ export const projectsList = [
     {
         id: 10,
         imgName: 'Evraz',
+        imgExtension: 'jpg',
         title: '3D Landing Page',
         startData: 'Дизайн-макет, ТЗ',
         progressList: [
@@ -165,6 +176,7 @@ export const projectsList = [
     {
         id: 11,
         imgName: 'EarthGlobe',
+        imgExtension: 'jpg',
         title: 'Интрерактивная анимация главного экрана с 3D сценой',
         startData: 'Дизайн-макет, ТЗ',
         progressList: [
@@ -179,6 +191,7 @@ export const projectsList = [
     {
         id: 12,
         imgName: 'BuildingInspection',
+        imgExtension: 'jpg',
         title: 'Работа front-end разработчиком в команде компании Maricano Digital над SPA "Building Inspections" на VueJS.',
         startData: 'ТЗ, Backend API',
         progressList: [
@@ -195,6 +208,7 @@ export const projectsList = [
     {
         id: 13,
         imgName: 'maricano',
+        imgExtension: 'jpg',
         title: 'Разработка лендинга Maricano Digital на VueJS.',
         startData: 'ТЗ, дизайн-макет в Figma',
         progressList: [
@@ -208,6 +222,7 @@ export const projectsList = [
     {
         id: 14,
         imgName: 'qwerta',
+        imgExtension: 'jpg',
         title: 'Разработка блока c 3D анимацией',
         startData: 'ТЗ, референс',
         progressList: [
@@ -221,6 +236,7 @@ export const projectsList = [
     {
         id: 15,
         imgName: 'severin',
+        imgExtension: 'jpg',
         title: 'Программирование анимаций, интерактива и создание кастомного слайдера на NuxtJS',
         startData: 'ТЗ, верстка страниц',
         progressList: [
@@ -235,6 +251,7 @@ export const projectsList = [
     {
         id: 16,
         imgName: 'gioconostro',
+        imgExtension: 'jpg',
         title: 'Личный кабинет на Vue3',
         startData: 'ТЗ, дизайн-макет',
         progressList: [
@@ -249,6 +266,7 @@ export const projectsList = [
     {
         id: 17,
         imgName: 'workee',
+        imgExtension: 'jpg',
         title: 'Верстка и программирование сайта на Vue3',
         startData: 'ТЗ, дизайн-макет в Figma',
         progressList: [
@@ -262,6 +280,7 @@ export const projectsList = [
     {
         id: 18,
         imgName: 'calculators',
+        imgExtension: 'jpg',
         title: 'Mortgage calculators',
         startData: 'ТЗ, референс калькулятора, верстка форм',
         progressList: [
@@ -278,6 +297,7 @@ export const projectsList = [
     {
         id: 19,
         imgName: 'medVR',
+        imgExtension: 'gif',
         title: 'Обучающая VR симуляция',
         startData: 'ТЗ, 2D референс',
         progressList: [
@@ -292,6 +312,7 @@ export const projectsList = [
     {
         id: 20,
         imgName: 'itBase',
+        imgExtension: 'jpg',
         title: 'Сайт с анимациями',
         startData: 'ТЗ, дизайн-макет',
         progressList: [
@@ -305,6 +326,7 @@ export const projectsList = [
     {
         id: 21,
         imgName: 'mealco',
+        imgExtension: 'jpg',
         title: 'Landing page on NuxtJS',
         startData: 'Дизайн-макет, ТЗ',
         progressList: [
@@ -319,6 +341,7 @@ export const projectsList = [
     {
         id: 22,
         imgName: 'pubTV',
+        imgExtension: 'jpg',
         title: 'Верстка и программирование сайта на Vue3',
         startData: 'ТЗ, дизайн-макет в Figma',
         progressList: [
@@ -329,7 +352,50 @@ export const projectsList = [
         href: 'https://friendly-choux-fbae6f.netlify.app/',
         tags: ['VueJS', 'Анимация']
     },
-    
+    {
+        id: 23,
+        imgName: 'n1Cristmass',
+        imgExtension: 'png',
+        title: 'Верстка лендинга для проекта N1 Partners',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Адаптивная и кроссбраузерная верстка',
+            'Программирование функционала: модальное окно с формой, слайдер партнеров, мобильное меню, вкладки',
+        ],
+        rezult: 'landing page',
+        href: 'https://kingarthur-it.github.io/N1Cristmass/',
+        tags: ['Верстка', 'JS']
+    },
+    {
+        id: 24,
+        imgName: 'inheart',
+        imgExtension: 'png',
+        title: 'Создание страниц с анимациями для проекта InHeart',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Адаптивная и кроссбраузерная верстка',
+            'Программирование: создание кастомного кропа фотографий, интерактивное добавление элементов, модальные окна, выбор цветового шаблона, сладер',
+            'Создание анимаций при загрузке основной страницы и футера, параллакс эффекты, создание разных цветовых тем основной страницы',
+        ],
+        rezult: 'страница заполнения данных и основная страница',
+        href: 'https://kingarthur-it.github.io/inheart/',
+        tags: ['Верстка', 'JS', 'Анимация']
+    },
+    {
+        id: 25,
+        imgName: 'cryptobike',
+        imgExtension: 'png',
+        title: 'Landing page | Cryptobike',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Адаптивная и кроссбраузерная верстка',
+            'Создание анимаций при скролле, анимаций кастомных компонент и диаграммы, прелоадре',
+            'Программирование: создание ряда слайдеров с кастомными эффектами, создание кастомной диаграммы с эффектами, модальные окна, мобильное меню',
+        ],
+        rezult: 'страница заполнения данных и основная страница',
+        href: 'https://kingarthur-it.github.io/cryptobyke/',
+        tags: ['Верстка', 'JS', 'Анимация']
+    },
 ]
 
 export const tags = ['VueJS', 'Анимация', 'NuxtJS', 'Верстка', 'JS', '3D', 'ThreeJS', 'WebGL']
