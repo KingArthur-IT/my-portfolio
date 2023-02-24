@@ -383,6 +383,35 @@ export const projectsList = [
     },
     {
         id: 25,
+        imgName: 'geotab',
+        imgExtension: 'jpg',
+        title: 'Разработка функционала для дашборда проекта, подключенного к системе GeoTab на Vue2 + Vuetify',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Адаптивная и кроссбраузерная верстка',
+            'Анимации, модальные окна, разработка кастомных компонент, программирование функционала',
+            'Получение данных по API, обработка, отображение. Система вкладок, фильтры, таблицы с полями в виде аккордеонов, пагинация и пр.',
+        ],
+        rezult: 'Модальное окно с подробной информацией',
+        href: '',
+        tags: ['VueJS', 'JS']
+    },
+    {
+        id: 26,
+        imgName: 'prominence',
+        imgExtension: 'jpg',
+        title: 'Верстка сайта для проекта студии разработки',
+        startData: 'ТЗ, дизайн-макет в Figma',
+        progressList: [
+            'Адаптивная и кроссбраузерная верстка',
+            'Небольшие анмиации, мобильное меню',
+        ],
+        rezult: 'Сайт',
+        href: 'https://kingarthur-it.github.io/prominence/',
+        tags: ['Верстка', 'JS']
+    },
+    {
+        id: 27,
         imgName: 'cryptobike',
         imgExtension: 'png',
         title: 'Landing page | Cryptobike',

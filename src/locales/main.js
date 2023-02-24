@@ -146,7 +146,7 @@ export const localesTexts = {
             experience: 'В комерческой веб-разработке',
             doneProjects: 'Выполненных проектов',
             reviewsCount: 'Подтвержденных отзывов',
-            yearShort: 'г'
+            yearShort: 'лет'
     }
       },
   }

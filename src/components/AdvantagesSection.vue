@@ -2,7 +2,7 @@
     <div class="section advantages">
         <div class="advantages__item">
             <div class="advantages__text">{{ $t("message.experience") }}</div>
-            <span>>1,5 {{ $t("message.yearShort") }}</span>
+            <span>>2 {{ $t("message.yearShort") }}</span>
         </div>
         <div class="advantages__item">
             <div class="advantages__text">{{ $t("message.doneProjects") }}</div>
