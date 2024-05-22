@@ -8,9 +8,9 @@ export const localesTexts = {
             offer: 'Offers',
             cases: 'Cases',
             contacts: 'Contacts',
-            generalInfo: 'y.o., Mariupol, Ukraine',
+            generalInfo: 'y.o., Ukraine-Poland',
             educationInfo: 'Mathematician-programmer, PhD (technical sciences)',
-            jobsInfo: 'Frontend developer, Senior Lecturer',
+            jobsInfo: 'Frontend developer',
             profileInfo1: 'Freelancer profile',
             profileInfo2: 'on freelancehunt with reviews',
             education: 'Education',
@@ -46,7 +46,14 @@ export const localesTexts = {
             experience: 'In commercial web development',
             doneProjects: 'Completed projects',
             reviewsCount: 'Verified Reviews',
-            yearShort: 'y'
+            yearShort: 'y',
+
+            allCategories: 'All categories',
+            initData: 'Source data',
+            workAmount: 'Amount of work done',
+            workResult: 'Work result',
+            toSite: 'Site link',
+            more: 'More',
         }
     },
     uk: {
@@ -58,9 +65,9 @@ export const localesTexts = {
             offer: 'Пропозиції',
             cases: 'Кейси',
             contacts: 'Контакти',
-            generalInfo: 'років, м. Маріуполь, Україна',
+            generalInfo: 'років, Україна-Польша',
             educationInfo: 'Математик-програміст, PhD (канд. техн. наук)',
-            jobsInfo: 'Frontend developer, Викладач',
+            jobsInfo: 'Frontend developer',
             profileInfo1: 'Профіль фрилансера',
             profileInfo2: 'на freelancehunt з відгуками',
             education: 'Освіта',
@@ -96,7 +103,14 @@ export const localesTexts = {
             experience: 'У комерційній веб-разробці',
             doneProjects: 'Виконанних проектів',
             reviewsCount: 'Підтверджених відгуків',
-            yearShort: 'р'
+            yearShort: 'р',
+
+            allCategories: 'Всі категорії',
+            initData: 'Вхідні дані',
+            workAmount: 'Об\'єм виконанної роботи',
+            workResult: 'Результат роботи',
+            toSite: 'Перейти на сайт',
+            more: 'Більше',
         }
     },
     ru: {
@@ -108,9 +122,9 @@ export const localesTexts = {
             offer: 'Оффер',           
             cases: 'Кейсы',
             contacts: 'Контакты',
-            generalInfo: 'лет, г. Мариуполь, Украина',
+            generalInfo: 'лет, Украина-Польша',
             educationInfo: 'Математик-программист, PhD (канд. техн. наук)',
-            jobsInfo: 'Frontend developer, Преподаватель',
+            jobsInfo: 'Frontend developer',
             profileInfo1: 'Профиль фрилансера',
             profileInfo2: 'на freelancehunt с отзывами',
             education: 'Образование',
@@ -146,7 +160,14 @@ export const localesTexts = {
             experience: 'В комерческой веб-разработке',
             doneProjects: 'Выполненных проектов',
             reviewsCount: 'Подтвержденных отзывов',
-            yearShort: 'лет'
+            yearShort: 'лет',
+
+            allCategories: 'Все категории',
+            initData: 'Исходные данные',
+            workAmount: 'Объем выполненной работы',
+            workResult: 'Результат работы',
+            toSite: 'Перейти на сайт',
+            more: 'Больше',
     }
       },
   }

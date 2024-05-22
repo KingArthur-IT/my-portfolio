@@ -14,13 +14,22 @@
 
 <script>
 import { useI18n } from 'vue-i18n'
+import { ref, watch } from 'vue'
 export default {
     setup(){
-        const { locale } = useI18n({ useScope: 'global' })
-        const optionsList = ['uk', 'ru', 'en'];
+        const { locale } = useI18n({ useScope: 'global' });
+        const currentLocale = ref(locale.value);
+        const optionsList = ref(['uk', 'ru', 'en'].filter(item => item !== currentLocale.value));
         const changeOption = (option) => {
             locale.value = option;
         }
+
+        // Watch для отслеживания изменений в locale.value
+        watch(locale, (newLocale) => {
+            currentLocale.value = newLocale;
+            optionsList.value = ['uk', 'ru', 'en'].filter(item => item !== newLocale);
+        });
+
         return {
             optionsList,
             changeOption

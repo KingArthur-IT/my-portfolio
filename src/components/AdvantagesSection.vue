@@ -2,7 +2,7 @@
     <div class="section advantages">
         <div class="advantages__item">
             <div class="advantages__text">{{ $t("message.experience") }}</div>
-            <span>>{{ new Date().getFullYear() - 2020 }} {{ $t("message.yearShort") }}</span>
+            <span>>{{experience }} {{ $t("message.yearShort") }}</span>
         </div>
         <div class="advantages__item">
             <div class="advantages__text">{{ $t("message.doneProjects") }}</div>
@@ -21,7 +21,13 @@
 
 <script>
 export default {
+    setup(){
+        const experience = new Date().getFullYear() - 2020
 
+        return {
+           experience
+        }
+    }
 }
 </script>
 

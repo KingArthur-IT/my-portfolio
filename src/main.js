@@ -6,8 +6,8 @@ import { createI18n } from 'vue-i18n'
 import { localesTexts } from './locales/main.js'
 
 const i18n = createI18n({
-    locale: 'ru', // set locale
-    fallbackLocale: 'ru', // set fallback locale
+    locale: 'en', // set locale
+    fallbackLocale: 'en', // set fallback locale
     messages: localesTexts, 
 })
 

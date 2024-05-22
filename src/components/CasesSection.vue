@@ -4,7 +4,7 @@
         <div class="anim-item title-underline"></div>  
 
         <div class="case-item anim-item tags-wrapper">
-            <div class="tag" :class="{'active-filter': selectedFilter === ''}" @click="selectedFilter = ''">Все категории</div>
+            <div class="tag" :class="{'active-filter': selectedFilter === ''}" @click="selectedFilter = ''">{{ $t("message.allCategories") }}</div>
             <div class="tag" v-for="(tag, i) in tags" :key="i" :class="{'active-filter': selectedFilter === tag}" @click="selectedFilter = tag"># {{tag}}</div>
         </div>
 
@@ -17,10 +17,10 @@
             <div class="case-item__description"> 
                 <h3 class="case-item__title">{{project.title}}</h3>
                 <p class="case-item__text">
-                    <strong>Исходные данные:</strong> {{project.startData}}
+                    <strong>{{ $t("message.initData") }}:</strong> {{project.startData}}
                 </p>
                 <p class="case-item__text">
-                    <strong>Объем выполненной работы:</strong>
+                    <strong>{{ $t("message.workAmount") }}:</strong>
                 <ul class="case-list">
                     <li v-for="(item, index) in project.progressList" :key="index" class="case-list__item">
                         {{item}}
@@ -28,10 +28,10 @@
                 </ul>
                 </p>
                 <p class="case-item__text">
-                    <strong>Результат работы:</strong> {{project.rezult}}
+                    <strong>{{ $t("message.workResult") }}:</strong> {{project.rezult}}
                 </p>
-                <a :href="project.href" class="case-item__link" v-if="project.href !== ''">
-                    <i class="far fa-eye case-list__icon"></i>Перейти на сайт
+                <a :href="project.href" target="_blank" class="case-item__link" v-if="project.href !== ''">
+                    <i class="far fa-eye case-list__icon"></i>{{ $t("message.toSite") }}
                 </a>
                 <div class="tags-list">
                     <div v-for="(tag, i) in project.tags" :key="i" class="tag">
@@ -41,19 +41,23 @@
             </div>
         </div>
         <div class="more-btn-wrapper">
-            <button v-if="showCasesCount < filteredList.length" @click="MoreEvent">Больше</button>
+            <button v-if="showCasesCount < filteredList.length" @click="MoreEvent">{{ $t("message.more") }}</button>
         </div>
     </section>
 </template>
 
 <script>
-import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { ref, computed, watch } from 'vue'
 import { projectsList, tags } from '../data/projectsListData.js'
 
 export default {
     setup(){
         let showCasesCount = ref(5);
         const showCasesStep = 5;
+
+        const { locale } = useI18n({ useScope: 'global' });
+        const currentLocale = ref(locale.value);
 
         const getImageUrl = (imgName, imgExt) => {
             return new URL(`../assets/img/previews/${imgName}.${imgExt}`, import.meta.url).href
@@ -68,13 +72,19 @@ export default {
             else {
                 showCasesCount.value = filteredList.value.length;
             }
-        }
+        };
+
+        let list = ref(projectsList.map(item => item[currentLocale.value]).filter(item => !!item));
+        watch(locale, (newLocale) => {
+            currentLocale.value = newLocale;
+            list.value = projectsList.map(item => item[currentLocale.value]).filter(item => !!item)
+        });
 
         let filteredList = computed(() => {
             if (selectedFilter.value !== ''){
-                return projectsList.filter((item) => {return item.tags.some(el => el === selectedFilter.value)});
+                return list.value.filter((item) => {return item.tags.some(el => el === selectedFilter.value)})
             }
-            else return projectsList;
+            else return list.value;
         });
 
         let progressListShown = computed(() => {

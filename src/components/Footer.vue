@@ -6,16 +6,16 @@
                 <div class="info-description">(c) {{currentYear}}</div>
             </div>
             <div class="footer__socials">
-                <a href="https://telegram.me/SantasDeer">
+                <a href="https://telegram.me/SantasDeer" target="_blank">
                     <img src="@/assets/img/socials/telegram_icon.svg" alt="" class="socials-img">
                 </a>
-                <a href="https://www.instagram.com/king_arthur2017">
-                    <img src="@/assets/img/socials/instagram_icon.svg" alt="" class="socials-img">    
+                <a href="https://www.linkedin.com/in/artem-ostapenko-59525a21a/" target="_blank">
+                    <img src="@/assets/img/socials/linkedin_icon.svg" alt="" class="socials-img">    
                 </a>
-                <a href="mailto:ostapenko.web.7@gmail.com">
+                <a href="mailto:ostapenko.web.7@gmail.com" target="_blank">
                     <img src="@/assets/img/socials/google_icon.svg" alt="" class="socials-img">
                 </a>
-                <a href="https://github.com/KingArthur-IT">
+                <a href="https://github.com/KingArthur-IT" target="_blank">
                     <img src="@/assets/img/socials/github_icon.svg" alt="" class="socials-img">
                 </a>
             </div>
